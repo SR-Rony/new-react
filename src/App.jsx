@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Todo from './pages/Todo'
 import Error from './pages/Error'
+import Count from './pages/Count'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/todo' element={<Todo/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/count' element={<Count/>}/>
         <Route path='/*' element={<Error/>}/>
       </Routes>
     </>
