@@ -5,7 +5,9 @@ const Count = () => {
     let [count,setCount]=useState(0)
 
     const handleIncres =()=>{
-        setCount(count +=1)
+        if (count <10){
+            setCount(count +=1)
+        }
         
     }
 
@@ -14,7 +16,10 @@ const Count = () => {
     }
 
     const handleDecres =()=>{
-        setCount(count -=1)
+        if (count>-10){
+            setCount(count -=1)
+
+        }
     }
 
 
