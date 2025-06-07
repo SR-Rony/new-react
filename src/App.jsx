@@ -9,13 +9,16 @@ import Error from './pages/Error'
 import Count from './pages/Count'
 import LoginPage from './pages/Login'
 import Dashboard from './pages/Dashboard'
+import Layout from './components/Layout'
+import Navbar from './components/Navbar'
 
 
 function App() {
 
   return (
     <>
-      <Routes path >
+    <Navbar/>
+      <Routes path='/' element={<Layout/>} >
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<LoginPage/>}/>
         <Route path='/chat' element={<Dashboard/>}/>
